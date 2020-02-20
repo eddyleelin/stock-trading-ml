@@ -5,8 +5,8 @@ import argparse
 
 
 def save_dataset(symbol, time_window):
-    credentials = json.load(open('creds.json', 'r'))
-    api_key = credentials['av_api_key']
+    # credentials = json.load(open('creds.json', 'r'))
+    api_key = "XQRL2QJZULZA0TFU"
     print(symbol, time_window)
     ts = TimeSeries(key=api_key, output_format='pandas')
     if time_window == 'intraday':
